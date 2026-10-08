@@ -91,10 +91,10 @@ export default function Resume() {
         <div className={styles.entries}>
           {profile.experience.length
             ? profile.experience.map((e) => (
-                <div key={e.org + e.when} className={styles.entry}>
+                <div key={e.start} className={styles.entry}>
                   <h3>{pick(e.role)}</h3>
-                  <span className={styles.when}>{e.when}</span>
-                  <span className={styles.org}>{e.org}</span>
+                  <span className={styles.when}>{pick(e.when)}</span>
+                  <span className={styles.org}>{pick(e.org)}</span>
                   {e.bullets && (
                     <ul className={styles.desc}>
                       {pick(e.bullets).map((b) => (

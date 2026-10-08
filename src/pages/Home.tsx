@@ -139,13 +139,13 @@ export default function Home() {
         <ol className={styles.timeline}>
           {profile.experience.length
             ? profile.experience.map((e, i) => (
-                <Reveal as="li" key={e.org + e.when} delay={i * 0.05} className={styles.tlItem}>
-                    <span className={styles.node}>{e.org.slice(0, 1)}</span>
+                <Reveal as="li" key={e.start} delay={i * 0.05} className={styles.tlItem}>
+                    <span className={styles.node}>{e.start}</span>
                     <div className={styles.tlBody}>
                       <h3>
-                        {pick(e.role)} · <span>{e.org}</span>
+                        {pick(e.role)} · <span>{pick(e.org)}</span>
                       </h3>
-                      <span className={styles.period}>{e.when}</span>
+                      <span className={styles.period}>{pick(e.when)}</span>
                       {e.bullets && (
                         <ul>
                           {pick(e.bullets).map((b) => (

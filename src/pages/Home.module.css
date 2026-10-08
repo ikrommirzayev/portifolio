@@ -208,7 +208,9 @@
   background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-sm), var(--glass-inner);
+  font-size: 12px;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
   color: var(--accent);
 }
 .nodeBlank {
