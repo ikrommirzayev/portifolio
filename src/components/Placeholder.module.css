@@ -1,0 +1,8 @@
+.ph {
+  color: var(--ph);
+  background: var(--ph-bg);
+  border: 1px dashed currentColor;
+  border-radius: 6px;
+  padding: 0 0.35em;
+  font-style: normal;
+}

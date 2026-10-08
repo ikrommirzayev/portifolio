@@ -1,0 +1,31 @@
+.foot {
+  max-width: var(--max);
+  margin: clamp(64px, 9vw, 110px) auto 0;
+  padding-top: 24px;
+  /* keep the year clear of the floating appearance button */
+  padding-right: 68px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--subtle);
+  font-size: 14px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--fg);
+  font-weight: 650;
+  text-decoration: none;
+}
+.mark {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--accent-ink);
+}

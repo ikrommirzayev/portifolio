@@ -1,0 +1,49 @@
+.tile {
+  flex: none;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--tile);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+.sm img {
+  padding: 4px;
+}
+
+.md {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+}
+.md img {
+  padding: 5px;
+}
+
+.lg {
+  width: 72px;
+  height: 72px;
+  border-radius: 19px;
+}
+.lg img {
+  padding: 8px;
+}
+
+@media (max-width: 560px) {
+  .lg {
+    width: 56px;
+    height: 56px;
+    border-radius: 15px;
+  }
+}
